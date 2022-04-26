@@ -110,7 +110,7 @@
     color: var(--accent-color);
 }
 
-@media screen and (max-width: 478.99px) {
+@media screen and (max-width: 480px) {
     .mobile__social {
         flex-wrap: wrap;
     }
@@ -124,7 +124,7 @@
         margin: 5px;
     }
 }
-@media screen and (min-width: 767.99px) {
+@media screen and (min-width: 769px) {
     .mobile__menu,
     .mobile_menu-button {
         display: none;

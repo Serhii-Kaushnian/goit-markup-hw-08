@@ -35,7 +35,7 @@
     height: 60px;
 }
 
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 768px) {
     .clients {
         flex-wrap: wrap;
         margin: -15px;
@@ -51,7 +51,7 @@
         height: 92px;
     }
 }
-@media screen and (min-width: 767.99px) {
+@media screen and (min-width: 768px) {
     .clients {
         flex-wrap: wrap;
         margin: -15px;
@@ -65,7 +65,7 @@
         height: 92px;
     }
 }
-@media screen and (min-width: 1199.99px) {
+@media screen and (min-width: 1200px) {
     .clients {
         flex-wrap: nowrap;
         margin: 0;

@@ -94,12 +94,12 @@
     }
 }
 
-@media screen and (max-width: 1199.99px) {
+@media screen and (max-width: 1200px) {
     .contact-list__item + .contact-list__item {
         margin-top: 10px;
     }
 }
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 768px) {
     .header {
         display: flex;
         align-items: center;
@@ -114,7 +114,7 @@
     }
 }
 
-@media screen and (min-width: 767.99px) {
+@media screen and (min-width: 768px) {
     .contact-list {
         flex-direction: column;
         justify-content: center;
@@ -122,7 +122,7 @@
     }
 }
 
-@media screen and (min-width: 1199.99px) {
+@media screen and (min-width: 1200px) {
     .contact-list {
         flex-direction: row;
         justify-content: center;

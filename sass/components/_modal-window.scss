@@ -195,7 +195,7 @@
     }
 }
 
-@media screen and (max-width: 1199.99px) {
+@media screen and (max-width: 1200px) {
     .modal {
         width: 450px;
     }
@@ -203,9 +203,9 @@
         font-size: 12px;
     }
 }
-@media screen and (max-width: 449.99px) {
+@media screen and (max-width: 481px) {
     .modal {
-        width: 100%;
+        max-width: calc((100% - 2 * 15px) / 1);
     }
     .checkbox_span {
         font-size: 12px;
