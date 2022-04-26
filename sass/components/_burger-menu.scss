@@ -1,0 +1,132 @@
+.mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+.mobile_menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 8px 12px;
+    border: none;
+    background-color: transparent;
+}
+
+.mobile__menu {
+    position: absolute;
+    z-index: 5;
+    left: 0px;
+    bottom: 60px;
+    transform: translateY(0);
+    transition: transform 250ms;
+    width: 100%;
+    height: 810px;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 40px;
+    background-color: #ffffff;
+
+    &.is-open {
+        transform: translateY(100%);
+        overflow-y: scroll;
+    }
+}
+
+.mobile_menu-icon:hover,
+.mobile_menu-icon:hover {
+    fill: var(--accent-color);
+}
+
+.mobile__nav {
+    margin-bottom: 300px;
+}
+
+.mobile__nav-link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
+
+.mobile__nav-link--current {
+    color: var(--accent-color);
+}
+
+.mobile__nav-item + .mobile__nav-item {
+    margin-top: 32px;
+}
+
+.mobile_menu-button .mobile_menu-close {
+    display: none;
+}
+.mobile_menu-button.is-open .mobile_menu-close {
+    display: inline-block;
+}
+.mobile_menu-button.is-open .mobile_menu-open {
+    display: none;
+}
+.mobile__contact {
+    margin-bottom: 64px;
+}
+
+.mobile__contact-item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.mobile__contact-link.mobile__contact-link--mobile-number {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+.mobile__contact-link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.mobile__social {
+    display: flex;
+}
+
+.mobile__social-item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+.mobile__social-item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.mobile__social-link {
+    color: var(--accent-color);
+}
+
+@media screen and (max-width: 478.99px) {
+    .mobile__social {
+        flex-wrap: wrap;
+    }
+    .mobile__contact-link.mobile__contact-link--mobile-number {
+        font-size: 25px;
+    }
+    .mobile__social {
+        margin: -5px;
+    }
+    .mobile__social-item {
+        margin: 5px;
+    }
+}
+@media screen and (min-width: 767.99px) {
+    .mobile__menu,
+    .mobile_menu-button {
+        display: none;
+    }
+}

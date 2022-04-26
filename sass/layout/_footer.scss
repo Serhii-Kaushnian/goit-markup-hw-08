@@ -1,0 +1,222 @@
+/* Footer  */
+
+.footer {
+    background-color: var(--footer-bg-color);
+    padding: 60px 0;
+}
+.footer__contacts > a {
+    color: var(--secondary-text-color);
+}
+.footer__contacts {
+    flex-grow: 1;
+}
+
+/* Address  */
+
+.footer__address {
+    margin-top: 20px;
+}
+
+.address__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.address__item + .address__item {
+    margin-top: 9px;
+}
+
+.footer__address a {
+    font-style: normal;
+}
+
+.address__link {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.address__link--white {
+    color: var(--secondary-text-color);
+}
+// =========Join===============
+.footer__join {
+    margin-left: 70px;
+}
+.join__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--secondary-text-color);
+}
+.join__list {
+    display: flex;
+    margin-top: 20px;
+}
+
+.join__list-item {
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    & + & {
+        margin-left: 10px;
+    }
+}
+
+// =======Subscribe================
+.footer__subscribe {
+    margin-left: 93px;
+}
+.subscribe__text {
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.subscribe__label {
+    position: relative;
+    display: flex;
+    width: 570px;
+
+    height: 50px;
+    fill: #ffffff;
+}
+.subscribe__input {
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 15px 16px;
+    border: 1px solid rgba(138, 138, 138, 0.767);
+    flex: 1 0 auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+    }
+}
+
+.subscribe__button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    padding: 10px;
+    max-width: 200px;
+
+    border-radius: 4px;
+    border: none;
+    margin-left: 12px;
+    color: #ffffff;
+    background-color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
+}
+
+.subscribe__button-icon {
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 767.99px) {
+    .footer {
+        min-height: 620px;
+    }
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 0;
+        margin-bottom: 60px;
+    }
+    .address__list {
+        align-items: center;
+    }
+    .footer__join {
+        margin-bottom: 60px;
+    }
+}
+@media screen and (min-width: 767.99px) {
+    .footer__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer {
+        min-height: 480px;
+    }
+    .footer__join {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1199.99px) {
+    .footer__join {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .footer__subscribe {
+        width: 450px;
+        margin: 0;
+        text-align: center;
+        margin: 60px auto 0;
+    }
+    .subscribe__label {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscribe__input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .subscribe__button {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 539.99px) {
+    .footer__subscribe {
+        width: 290px;
+    }
+}
+@media screen and (min-width: 1199.99px) {
+    .footer {
+        min-height: 260px;
+    }
+    .footer__container {
+        display: flex;
+        align-items: baseline;
+    }
+}
