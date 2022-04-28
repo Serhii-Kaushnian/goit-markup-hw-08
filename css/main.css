@@ -1266,12 +1266,7 @@ body.modal-open {
 /* ======Filter list======= */
 .filter {
   margin-bottom: 50px;
-  display: flex;
   justify-content: center;
-}
-
-.filter__item + .filter__item {
-  margin-left: 8px;
 }
 
 .filter__button {
@@ -1357,29 +1352,35 @@ body.modal-open {
   transform: translateY(0);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 381px) and (max-width: 1200px) {
   .filter {
-    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .filter {
-    flex-wrap: wrap;
-    margin: -15px;
-  }
-  .filter__item:last-child {
-    flex-basis: 100%;
-  }
   .filter__item {
     margin: 15px;
     flex-basis: calc((100% - 4 * 15px) / 2);
+  }
+  .filter__item:last-child {
+    flex-basis: 100%;
   }
   .filter__button {
     width: 100%;
   }
   .projects__item + .projects__item {
     margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .filter {
+    margin-bottom: 40px;
+  }
+  .filter__item + .filter__item {
+    margin-left: 15px;
   }
 }
 
@@ -1394,12 +1395,22 @@ body.modal-open {
     flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
-  .projects__item:last-child {
+  .projects__item:nth-last-child(odd) {
     margin-right: auto;
+  }
+  .projects__item + .projects__item {
+    margin-top: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .filter {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .filter__item + .filter__item {
+    margin-left: 8px;
+  }
   .projects__item {
     flex-basis: calc((100% - 6 * 15px) / 3);
   }
